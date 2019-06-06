@@ -168,9 +168,9 @@ void oblicz_X() {
 }
 
 void wczytaj_dane() {
-	std::cout << "Podaj rozmiar macierzy ktora ma zostac wczytana z pliku macierz.dat :\n";
+	std::cout << "Podaj rozmiar macierzy ktora ma zostac wczytana z pliku macierz.txt:\n";
 	std::cin >> n;
-	std::fstream pWejsciowy("macierz.dat", std::ios::in);
+	std::fstream pWejsciowy("macierz.txt", std::ios::in);
 	macierz_A = new double* [n];
 	// Alokacja miejsca na macierz A
 	for (int i = 0; i < n; i++) {
